@@ -32,10 +32,13 @@ For a target repository, the local helper provides lightweight checkpoints:
 ```bash
 python3 devsquad.py init
 python3 devsquad.py status
+python3 devsquad.py inspect
 python3 devsquad.py validate
 ```
 
 The repository also includes `AGENTS.md`, Copilot repository instructions, and visible Lead/SDET/Reviewer agent definitions. These are adapters around the same canonical skills, so behavior stays consistent across hosts.
+
+For SDET work, use `templates/test-plan.md` to make risk coverage explicit. Before a PR or release, use `templates/release-checklist.md` so readiness is evidence-based rather than inferred from a green happy-path test.
 
 ## Distribution
 

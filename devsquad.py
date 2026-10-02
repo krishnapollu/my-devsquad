@@ -37,6 +37,10 @@ def validate():
     return result.returncode
 
 parser = argparse.ArgumentParser(description="Local DevSquad checkpoint helper")
-parser.add_argument("command", choices=["init", "status", "validate"])
+parser.add_argument("command", choices=["init", "status", "inspect", "validate"])
 args = parser.parse_args()
-sys.exit({"init": init, "status": status, "validate": validate}[args.command]())
+
+def inspect():
+    return subprocess.run([sys.executable, "scripts/inspect.py"], check=False).returncode
+
+sys.exit({"init": init, "status": status, "inspect": inspect, "validate": validate}[args.command]())

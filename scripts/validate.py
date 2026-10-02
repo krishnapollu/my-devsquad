@@ -24,7 +24,7 @@ for p in skills:
     if not text.startswith("---\n") or "name:" not in text or "description:" not in text:
         errors.append(f"missing skill frontmatter in {p.relative_to(ROOT)}")
 
-for template in ("templates/spec.md", "templates/state.md", "templates/decisions.md"):
+for template in ("templates/spec.md", "templates/state.md", "templates/state.json", "templates/decisions.md", "templates/test-plan.md", "templates/release-checklist.md"):
     require(template)
 
 for doc in ("README.md", "LICENSE", "CONTRIBUTING.md", "SECURITY.md", "CHANGELOG.md"):

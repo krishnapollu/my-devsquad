@@ -10,3 +10,4 @@
 - Added cross-assistant adapters for generic agents, Claude-style repositories, and GitHub Copilot.
 - Added visible Lead, SDET, and Reviewer agent definitions plus local checkpoint commands.
 - Added GitHub Actions validation.
+- Added deterministic repository inspection, risk-based test-plan, and release-readiness templates.
