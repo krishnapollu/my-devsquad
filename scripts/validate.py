@@ -29,6 +29,8 @@ for template in ("templates/spec.md", "templates/state.md", "templates/decisions
 
 for doc in ("README.md", "LICENSE", "CONTRIBUTING.md", "SECURITY.md", "CHANGELOG.md"):
     require(doc)
+for adapter in ("AGENTS.md", "CLAUDE.md", ".github/copilot-instructions.md", ".github/agents/devsquad-lead.agent.md"):
+    require(adapter)
 
 if errors:
     print("Validation failed:")

@@ -27,6 +27,16 @@ DevSquad preserves unrelated user changes and does not use destructive history o
 
 Run `python3 scripts/validate.py` for structural validation and `python3 -m pytest -q` when pytest is available. The validator has no third-party dependencies.
 
+For a target repository, the local helper provides lightweight checkpoints:
+
+```bash
+python3 devsquad.py init
+python3 devsquad.py status
+python3 devsquad.py validate
+```
+
+The repository also includes `AGENTS.md`, Copilot repository instructions, and visible Lead/SDET/Reviewer agent definitions. These are adapters around the same canonical skills, so behavior stays consistent across hosts.
+
 ## Distribution
 
 For personal use, load the folder as a local plugin. For wider distribution, package the root manifest and `skills/` directory, review the official plugin submission requirements, and publish through the supported directory flow. Optional GitHub, Slack, email, or calendar notifications require an explicitly installed and authorized connector; without one, DevSquad produces copy-ready summaries and links rather than pretending to send notifications.

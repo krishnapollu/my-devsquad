@@ -2,4 +2,6 @@ __pycache__/
 .pytest_cache/
 devsquad/state.md
 devsquad/decisions.md
+.devsquad/state.json
+.devsquad/decisions.json
 .DS_Store

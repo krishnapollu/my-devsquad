@@ -1,8 +1,13 @@
-import subprocess, sys
+import subprocess, sys, unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-def test_plugin_structure():
+class DevSquadTests(unittest.TestCase):
+  def test_plugin_structure(self):
     result = subprocess.run([sys.executable, ROOT / "scripts/validate.py"], capture_output=True, text=True)
-    assert result.returncode == 0, result.stdout + result.stderr
+    self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
+
+  def test_local_helper_help(self):
+    result = subprocess.run([sys.executable, ROOT / "devsquad.py", "--help"], capture_output=True, text=True)
+    self.assertEqual(result.returncode, 0)
