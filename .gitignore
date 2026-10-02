@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+devsquad/state.md
+devsquad/decisions.md
+.DS_Store

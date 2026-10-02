@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "name": "devsquad",
+  "version": "0.1.0",
+  "description": "A reusable AI software engineering team for planning, implementing, testing, reviewing, and releasing changes in any repository.",
+  "author": { "name": "Krishna Pollu" },
+  "license": "MIT",
+  "skills": "./skills/",
+  "extensions": {
+    "com.openai": {
+      "display_name": "DevSquad",
+      "category": "developer-tools",
+      "onboarding_skill": "./skills/lead-delivery/SKILL.md"
+    }
+  }
+}

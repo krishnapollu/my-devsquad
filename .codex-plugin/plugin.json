@@ -1,0 +1,10 @@
+{
+  "name": "devsquad",
+  "display_name": "DevSquad",
+  "description": "A generic AI software engineering team for Codex and VS Code.",
+  "version": "0.1.0",
+  "author": "Krishna Pollu",
+  "repository": "https://github.com/krishnapollu/my-devsquad",
+  "skills": "./skills/",
+  "license": "MIT"
+}
